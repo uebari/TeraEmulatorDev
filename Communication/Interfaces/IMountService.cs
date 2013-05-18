@@ -6,5 +6,6 @@ namespace Communication.Interfaces
     {
         void UnkQuestion(Player player, int unk);
         void ProcessMount(Player player, int skillId);
+        void PlayerEnterWorld(Player player);
     }
 }

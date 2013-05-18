@@ -17,5 +17,8 @@
     <Setting Name="dbconnstring" Type="System.String" Scope="User">
       <Value Profile="(Default)">SERVER=localhost;DATABASE=dbtera;UID=root;PASSWORD=;PORT=3306;charset=utf8</Value>
     </Setting>
+    <Setting Name="WellcomeMsg" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Welcome to tera-emu development server!!</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

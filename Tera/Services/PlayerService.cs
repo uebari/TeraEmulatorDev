@@ -77,6 +77,8 @@ namespace Tera.Services
 
         public void PlayerEnterWorld(Player player)
         {
+            new SpSystemNotice(GamePlay.Default.WellcomeMsg, 15).Send(player.Connection);
+            Communication.Global.MountService.PlayerEnterWorld(player);
         }
 
         public void PlayerEndGame(Player player)

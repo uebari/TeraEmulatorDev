@@ -37,5 +37,14 @@ namespace Tera.Services
                 Communication.Logic.CreatureLogic.UpdateCreatureStats(player);
             }
         }
+
+        public void PlayerEnterWorld(Player player)
+        {
+            if (player.Mount != 0)
+            {
+                Communication.Global.VisibleService.Send(player, new SpMountShow(player, Data.Data.Mounts[player.Mount].MountId, player.Mount));
+                Communication.Logic.CreatureLogic.UpdateCreatureStats(player);
+            }
+        }
     }
 }
