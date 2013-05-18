@@ -147,8 +147,8 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `amount` int(11) NOT NULL,
   `color` int(11) NOT NULL,
   `slot` int(5) NOT NULL,
-  `storagetype` enum('Inventory','CharacterWarehouse','AccountWarehouse','GuildWarehouse','Trade') NOT NULL,
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  `storagetype` enum('Inventory','CharacterWarehouse','AccountWarehouse','GuildWarehouse','Trade') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
