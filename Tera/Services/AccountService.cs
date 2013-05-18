@@ -14,11 +14,11 @@ namespace Tera.Services
             //connection.Account = Cache.GetAccount(accountName);
             connection.Account = DAOManager.accountDAO.LoadAccount(accountName);
             connection.Account.Players = DAOManager.playerDAO.LoadAccountPlayers(accountName);
-            connection.Account.AccountWarehouse.Items = DAOManager.inventoryDAO.LoadAccountStorage(connection.Account);
+            connection.Account.AccountWarehouse = DAOManager.inventoryDAO.LoadAccountStorage(connection.Account);
             foreach (var player in connection.Account.Players)
             {
-                player.Inventory.Items = DAOManager.inventoryDAO.LoadStorage(player, StorageType.Inventory);
-                player.CharacterWarehouse.Items = DAOManager.inventoryDAO.LoadStorage(player, StorageType.CharacterWarehouse);
+                player.Inventory = DAOManager.inventoryDAO.LoadStorage(player, StorageType.Inventory);
+                player.CharacterWarehouse = DAOManager.inventoryDAO.LoadStorage(player, StorageType.CharacterWarehouse);
                 player.Quests = DAOManager.questDAO.LoadQuests(player);
             }
         }

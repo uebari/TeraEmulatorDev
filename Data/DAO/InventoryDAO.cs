@@ -25,42 +25,18 @@ namespace Data.DAO
 
         public bool AddItem(Player player, StorageType type, KeyValuePair<int, StorageItem> KeyVP)
         {
-            string SQL = "SELECT * FROM `inventory` WHERE `playerid` = ?pid AND `itemid` = ?itemid AND SLOT = ?slot";
-            MySqlCommand cmd = new MySqlCommand(SQL, InventoryDAOConnection);
-            cmd.Parameters.AddWithValue("?pid", player.pid);
-            cmd.Parameters.AddWithValue("?itemid", KeyVP.Value.ItemId);
-            cmd.Parameters.AddWithValue("?slot", KeyVP.Key);
-            MySqlDataReader InventoryAddReader = cmd.ExecuteReader();
-            bool isExists = InventoryAddReader.HasRows;
-
-            if (!isExists)
-            {
-                SQL = "INSERT INTO `inventory` "
+            string SQL = "INSERT INTO `inventory` "
                     + "(`accountname`, `playerid`, `itemid`, `amount`, `color`, `slot`, `storagetype`) "
                     + "VALUES(?accountname, ?pid, ?itemid, ?count, ?color, ?slot, ?type);";
-                cmd = new MySqlCommand(SQL, InventoryDAOConnection);
-                cmd.Parameters.AddWithValue("?accountname", player.AccountName);
-                cmd.Parameters.AddWithValue("?pid", player.pid);
-                cmd.Parameters.AddWithValue("?itemid", KeyVP.Value.ItemId);
-                cmd.Parameters.AddWithValue("?count", KeyVP.Value.Count);
-                cmd.Parameters.AddWithValue("?color", KeyVP.Value.Color);
-                cmd.Parameters.AddWithValue("?slot", KeyVP.Key);
-                cmd.Parameters.AddWithValue("?type", type.ToString());
-            }
-            else
-            {
-                SQL = "UPDATE `inventory` SET "
-                    + "`amount` = ?count, `color` = ?color, `slot` = ?slot, `storagetype` = ?type "
-                    + "WHERE `itemid` = ?itemid and `playerid` = ?pid";
-                cmd = new MySqlCommand(SQL, InventoryDAOConnection);
-                cmd.Parameters.AddWithValue("?count", KeyVP.Value.Count);
-                cmd.Parameters.AddWithValue("?color", KeyVP.Value.Color);
-                cmd.Parameters.AddWithValue("?slot", KeyVP.Key);
-                cmd.Parameters.AddWithValue("?type", type.ToString());
-                cmd.Parameters.AddWithValue("?itemid", KeyVP.Value.ItemId);
-                cmd.Parameters.AddWithValue("?pid", player.pid);
-            }
-            InventoryAddReader.Close();
+            MySqlCommand cmd = new MySqlCommand(SQL, InventoryDAOConnection);
+            cmd.Parameters.AddWithValue("?accountname", player.AccountName);
+            cmd.Parameters.AddWithValue("?pid", player.pid);
+            cmd.Parameters.AddWithValue("?itemid", KeyVP.Value.ItemId);
+            cmd.Parameters.AddWithValue("?count", KeyVP.Value.Count);
+            cmd.Parameters.AddWithValue("?color", KeyVP.Value.Color);
+            cmd.Parameters.AddWithValue("?slot", KeyVP.Key);
+            cmd.Parameters.AddWithValue("?type", type.ToString());
+
             try
             {
                 cmd.ExecuteNonQuery();
@@ -70,22 +46,28 @@ namespace Data.DAO
             {
                 Log.ErrorException("DAO: ADD ITEM ERROR!", e);
             }
+
             return false;
         }
 
-        public bool SaveStorage(Player player, Storage storage)
+        public void SaveStorage(Player player, Storage storage)
         {
+            string cmdString = "DELETE FROM inventory WHERE PlayerId=?pid";
+            MySqlCommand command = new MySqlCommand(cmdString, InventoryDAOConnection);
+            command.Parameters.AddWithValue("?pid", player.pid);
+            command.ExecuteNonQuery();
+
+            storage.Items.Add(999, storage.MoneyToItem); // add temporary save money item
+
             if (storage.Items.Count > 0)
             {
                 foreach (var item in storage.Items)
                     AddItem(player, storage.StorageType, item);
-
-                return true;
             }
-            return false;
+            storage.Items.Remove(999); // remove temporary save money item
         }
 
-        public Dictionary<int, StorageItem> LoadStorage(Player player, StorageType type)
+        public Storage LoadStorage(Player player, StorageType type)
         {
             string SQL = "SELECT * FROM `inventory` WHERE "
                 + "`playerid` = ?pid AND `storagetype` = ?type";
@@ -94,26 +76,34 @@ namespace Data.DAO
             cmd.Parameters.AddWithValue("?type", type.ToString());
             MySqlDataReader LoadStorageReader = cmd.ExecuteReader();
 
-            Dictionary<int, StorageItem> items = new Dictionary<int, StorageItem>();
+            var storage = new Storage { StorageType = StorageType.Inventory };
             if (LoadStorageReader.HasRows)
             {
                 while (LoadStorageReader.Read())
                 {
-                    StorageItem item = new StorageItem()
+                    if (LoadStorageReader.GetInt32(2) != 20000000)
                     {
-                        ItemId = LoadStorageReader.GetInt32(3),
-                        Count = LoadStorageReader.GetInt32(4),
-                        Color = LoadStorageReader.GetInt32(5),
-                    };
-                    items.Add(LoadStorageReader.GetInt32(6), item);
+                        StorageItem item = new StorageItem()
+                        {
+                            ItemId = LoadStorageReader.GetInt32(2),
+                            Count = LoadStorageReader.GetInt32(3),
+                            Color = LoadStorageReader.GetInt32(4),
+                        };
+
+                        storage.Items.Add(LoadStorageReader.GetInt32(5), item);
+                    }
+                    else
+                    {
+                        storage.Money = LoadStorageReader.GetInt32(3);
+                    }
                 }
             }
             LoadStorageReader.Close();
 
-            return items;
+            return storage;
         }
 
-        public Dictionary<int, StorageItem> LoadAccountStorage(Account account)
+        public Storage LoadAccountStorage(Account account)
         {
             string SQL = "SELECT * FROM `inventory` WHERE "
                 + "`accountname` = ?accountname AND `storagetype` = ?type";
@@ -122,23 +112,23 @@ namespace Data.DAO
             cmd.Parameters.AddWithValue("?type", StorageType.AccountWarehouse.ToString());
             MySqlDataReader LoadAccountStorageReader = cmd.ExecuteReader();
 
-            Dictionary<int, StorageItem> items = new Dictionary<int, StorageItem>();
+            var storage = new Storage { StorageType = StorageType.AccountWarehouse };
             if (LoadAccountStorageReader.HasRows)
             {
                 while (LoadAccountStorageReader.Read())
                 {
                     StorageItem item = new StorageItem()
                     {
-                        ItemId = LoadAccountStorageReader.GetInt32(3),
-                        Count = LoadAccountStorageReader.GetInt32(4),
-                        Color = LoadAccountStorageReader.GetInt32(5),
+                        ItemId = LoadAccountStorageReader.GetInt32(2),
+                        Count = LoadAccountStorageReader.GetInt32(3),
+                        Color = LoadAccountStorageReader.GetInt32(4),
                     };
-                    items.Add(LoadAccountStorageReader.GetInt32(6), item);
+                    storage.Items.Add(LoadAccountStorageReader.GetInt32(5), item);
                 }
             }
             LoadAccountStorageReader.Close();
 
-            return items;
+            return storage;
         }
     }
 }

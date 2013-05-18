@@ -19,6 +19,19 @@ namespace Data.Structures.Player
 
         public bool Locked = false;
 
+        public StorageItem MoneyToItem
+        {
+            get
+            {
+                return new StorageItem()
+                {
+                    ItemId = 20000000,
+                    Count = (int)Money,
+                    Color = 0,
+                };
+            }
+        }
+
         public bool IsFull()
         {
             int count = 0;

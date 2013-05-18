@@ -141,7 +141,6 @@ CREATE TABLE IF NOT EXISTS `guild_ranks` (
 --
 
 CREATE TABLE IF NOT EXISTS `inventory` (
-  `id` bigint(20) NOT NULL AUTO_INCREMENT,
   `accountname` varchar(50) NOT NULL,
   `playerid` int(11) NOT NULL,
   `itemid` int(11) NOT NULL,
@@ -149,7 +148,6 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `color` int(11) NOT NULL,
   `slot` int(5) NOT NULL,
   `storagetype` enum('Inventory','CharacterWarehouse','AccountWarehouse','GuildWarehouse','Trade') NOT NULL,
-  PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
