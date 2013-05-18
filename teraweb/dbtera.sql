@@ -1,49 +1,44 @@
--- phpMyAdmin SQL Dump
--- version 3.5.2.2
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: May 17, 2013 at 11:22 PM
--- Server version: 5.5.27
--- PHP Version: 5.4.7
+/*
+Navicat MySQL Data Transfer
 
-SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+Source Server         : localhost
+Source Server Version : 50529
+Source Host           : localhost:3306
+Source Database       : tera
 
+Target Server Type    : MYSQL
+Target Server Version : 50529
+File Encoding         : 65001
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8 */;
+Date: 2013-05-18 13:00:34
+*/
 
---
--- Database: `dbtera`
---
+SET FOREIGN_KEY_CHECKS=0;
 
--- --------------------------------------------------------
-
---
--- Table structure for table `accounts`
---
-
-CREATE TABLE IF NOT EXISTS `accounts` (
+-- ----------------------------
+-- Table structure for `accounts`
+-- ----------------------------
+DROP TABLE IF EXISTS `accounts`;
+CREATE TABLE `accounts` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `password` varchar(32) NOT NULL,
   `accesslevel` int(11) NOT NULL DEFAULT '0',
   `membership` int(11) NOT NULL DEFAULT '0',
-  `lastonlineutc` bigint(20) NOT NULL,
-  `coins` int(11) NOT NULL,
+  `lastonlineutc` bigint(20) NOT NULL DEFAULT '0',
+  `coins` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Records of accounts
+-- ----------------------------
 
---
--- Table structure for table `character`
---
-
-CREATE TABLE IF NOT EXISTS `character` (
+-- ----------------------------
+-- Table structure for `character`
+-- ----------------------------
+DROP TABLE IF EXISTS `character`;
+CREATE TABLE `character` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `accountname` varchar(50) NOT NULL,
   `level` int(11) NOT NULL,
@@ -56,18 +51,20 @@ CREATE TABLE IF NOT EXISTS `character` (
   `lastpraise` int(11) NOT NULL DEFAULT '-1',
   `currentbanksection` int(11) NOT NULL,
   `creationdate` int(11) NOT NULL,
-  `lastonline` int(11) NOT NULL,
+  `lastonline` int(11) NOT NULL DEFAULT '0',
   `deleted` smallint(6) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Records of character
+-- ----------------------------
 
---
--- Table structure for table `character_data`
---
-
-CREATE TABLE IF NOT EXISTS `character_data` (
+-- ----------------------------
+-- Table structure for `character_data`
+-- ----------------------------
+DROP TABLE IF EXISTS `character_data`;
+CREATE TABLE `character_data` (
   `playerid` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `gender` enum('Male','Female','','') NOT NULL,
@@ -81,15 +78,17 @@ CREATE TABLE IF NOT EXISTS `character_data` (
   `z` float NOT NULL,
   `h` int(11) NOT NULL,
   PRIMARY KEY (`playerid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Records of character_data
+-- ----------------------------
 
---
--- Table structure for table `guilds`
---
-
-CREATE TABLE IF NOT EXISTS `guilds` (
+-- ----------------------------
+-- Table structure for `guilds`
+-- ----------------------------
+DROP TABLE IF EXISTS `guilds`;
+CREATE TABLE `guilds` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `guildname` varchar(50) NOT NULL,
   `guildranks` longtext NOT NULL,
@@ -103,44 +102,50 @@ CREATE TABLE IF NOT EXISTS `guilds` (
   `creationdate` int(11) NOT NULL,
   `guildmembers` longtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Records of guilds
+-- ----------------------------
 
---
--- Table structure for table `guild_events`
---
-
-CREATE TABLE IF NOT EXISTS `guild_events` (
+-- ----------------------------
+-- Table structure for `guild_events`
+-- ----------------------------
+DROP TABLE IF EXISTS `guild_events`;
+CREATE TABLE `guild_events` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `gid` int(11) NOT NULL,
   `initiator` varchar(50) NOT NULL,
   `date` int(11) NOT NULL,
   `args` longtext NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Records of guild_events
+-- ----------------------------
 
---
--- Table structure for table `guild_ranks`
---
-
-CREATE TABLE IF NOT EXISTS `guild_ranks` (
+-- ----------------------------
+-- Table structure for `guild_ranks`
+-- ----------------------------
+DROP TABLE IF EXISTS `guild_ranks`;
+CREATE TABLE `guild_ranks` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `gid` int(11) NOT NULL,
   `rankprivileges` int(11) NOT NULL,
   `rankname` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Records of guild_ranks
+-- ----------------------------
 
---
--- Table structure for table `inventory`
---
-
-CREATE TABLE IF NOT EXISTS `inventory` (
+-- ----------------------------
+-- Table structure for `inventory`
+-- ----------------------------
+DROP TABLE IF EXISTS `inventory`;
+CREATE TABLE `inventory` (
   `accountname` varchar(50) NOT NULL,
   `playerid` int(11) NOT NULL,
   `itemid` int(11) NOT NULL,
@@ -150,13 +155,15 @@ CREATE TABLE IF NOT EXISTS `inventory` (
   `storagetype` enum('Inventory','CharacterWarehouse','AccountWarehouse','GuildWarehouse','Trade') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Records of inventory
+-- ----------------------------
 
---
--- Table structure for table `quests`
---
-
-CREATE TABLE IF NOT EXISTS `quests` (
+-- ----------------------------
+-- Table structure for `quests`
+-- ----------------------------
+DROP TABLE IF EXISTS `quests`;
+CREATE TABLE `quests` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `characterid` int(11) NOT NULL,
   `questid` int(11) NOT NULL,
@@ -164,15 +171,17 @@ CREATE TABLE IF NOT EXISTS `quests` (
   `step` int(11) NOT NULL,
   `counters` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- --------------------------------------------------------
+-- ----------------------------
+-- Records of quests
+-- ----------------------------
 
---
--- Table structure for table `servers`
---
-
-CREATE TABLE IF NOT EXISTS `servers` (
+-- ----------------------------
+-- Table structure for `servers`
+-- ----------------------------
+DROP TABLE IF EXISTS `servers`;
+CREATE TABLE `servers` (
   `id` int(11) NOT NULL,
   `title` varchar(50) NOT NULL,
   `small_text` text NOT NULL,
@@ -190,6 +199,21 @@ CREATE TABLE IF NOT EXISTS `servers` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+-- ----------------------------
+-- Records of servers
+-- ----------------------------
+
+-- ----------------------------
+-- Table structure for `skills`
+-- ----------------------------
+DROP TABLE IF EXISTS `skills`;
+CREATE TABLE `skills` (
+  `Id` int(11) NOT NULL AUTO_INCREMENT,
+  `PlayerId` int(11) NOT NULL DEFAULT '0',
+  `SkillId` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of skills
+-- ----------------------------
