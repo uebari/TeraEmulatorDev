@@ -1,0 +1,62 @@
+03:06:56.3863 | Data: guilds_cache file not found!
+03:07:00.6481 | ARecvPacket
+EXCEPTION OCCURRED
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(Int32 index, Boolean checkNull)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 i)
+   at Data.DAO.PlayerDAO.LoadAccountPlayers(String username) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\DAO\PlayerDAO.cs:line 38
+   at Tera.Services.AccountService.Authorized(IConnection connection, String accountName) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\AccountService.cs:line 16
+   at Communication.Logic.AccountLogic.TryAuthorize(IConnection connection, String accountName, String session) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\AccountLogic.cs:line 16
+   at Network.Client.RpAuth.Process() in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\Client\RpAuth.cs:line 26
+   at Network.ARecvPacket.Process(Connection connection) in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\ARecvPacket.cs:line 25
+03:08:10.4212 | Data: guilds_cache file not found!
+03:08:13.8667 | ARecvPacket
+EXCEPTION OCCURRED
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(Int32 index, Boolean checkNull)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 i)
+   at Data.DAO.PlayerDAO.LoadAccountPlayers(String username) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\DAO\PlayerDAO.cs:line 38
+   at Tera.Services.AccountService.Authorized(IConnection connection, String accountName) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\AccountService.cs:line 16
+   at Communication.Logic.AccountLogic.TryAuthorize(IConnection connection, String accountName, String session) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\AccountLogic.cs:line 17
+   at Network.Client.RpAuth.Process() in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\Client\RpAuth.cs:line 26
+   at Network.ARecvPacket.Process(Connection connection) in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\ARecvPacket.cs:line 25
+03:10:08.7816 | Data: guilds_cache file not found!
+03:10:11.6955 | ARecvPacket
+EXCEPTION OCCURRED
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(Int32 index, Boolean checkNull)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 i)
+   at Data.DAO.PlayerDAO.LoadAccountPlayers(String username) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\DAO\PlayerDAO.cs:line 38
+   at Tera.Services.AccountService.Authorized(IConnection connection, String accountName) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\AccountService.cs:line 16
+   at Communication.Logic.AccountLogic.TryAuthorize(IConnection connection, String accountName, String session) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\AccountLogic.cs:line 17
+   at Network.Client.RpAuth.Process() in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\Client\RpAuth.cs:line 26
+   at Network.ARecvPacket.Process(Connection connection) in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\ARecvPacket.cs:line 25
+03:11:54.6096 | Data: guilds_cache file not found!
+03:11:58.5082 | ARecvPacket
+EXCEPTION OCCURRED
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(Int32 index, Boolean checkNull)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetString(Int32 i)
+   at Data.DAO.PlayerDAO.LoadAccountPlayers(String username) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\DAO\PlayerDAO.cs:line 38
+   at Tera.Services.AccountService.Authorized(IConnection connection, String accountName) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\AccountService.cs:line 16
+   at Communication.Logic.AccountLogic.TryAuthorize(IConnection connection, String accountName, String session) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\AccountLogic.cs:line 17
+   at Network.Client.RpAuth.Process() in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\Client\RpAuth.cs:line 26
+   at Network.ARecvPacket.Process(Connection connection) in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\ARecvPacket.cs:line 25
+03:12:26.1952 | Data: guilds_cache file not found!
+03:15:23.4320 | Data: guilds_cache file not found!
+03:16:44.8369 | ARecvPacket
+EXCEPTION OCCURRED
+MySql.Data.MySqlClient.MySqlException (0x80004005): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'character WHERE AccountName='uebari'' at line 1
+   at MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   at MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.GetResult(Int32 statementId, Int32& affectedRows, Int32& insertedId)
+   at MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId)
+   at MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader()
+   at Data.DAO.PlayerDAO.LoadAccountPlayers(String accName) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\DAO\PlayerDAO.cs:line 30
+   at Tera.Services.AccountService.Authorized(IConnection connection, String accountName) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\AccountService.cs:line 16
+   at Communication.Logic.AccountLogic.TryAuthorize(IConnection connection, String accountName, String session) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\AccountLogic.cs:line 17
+   at Network.Client.RpAuth.Process() in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\Client\RpAuth.cs:line 26
+   at Network.ARecvPacket.Process(Connection connection) in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\ARecvPacket.cs:line 25
+03:19:24.8281 | Data: guilds_cache file not found!

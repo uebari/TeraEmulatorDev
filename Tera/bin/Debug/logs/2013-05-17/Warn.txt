@@ -1,0 +1,30 @@
+01:04:01.4906 | Data: guilds_cache file not found!
+01:27:10.1171 | Data: guilds_cache file not found!
+01:33:39.3794 | Data: guilds_cache file not found!
+11:47:59.1601 | Data: guilds_cache file not found!
+11:50:42.0863 | Data: guilds_cache file not found!
+12:02:58.1099 | Data: guilds_cache file not found!
+12:04:11.1758 | Data: guilds_cache file not found!
+12:04:41.9071 | Data: guilds_cache file not found!
+12:11:31.9284 | Data: guilds_cache file not found!
+12:33:00.6473 | Data: guilds_cache file not found!
+12:39:20.2570 | Data: guilds_cache file not found!
+12:43:58.1112 | Data: guilds_cache file not found!
+13:13:20.2104 | ARecvPacket
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.Controllers.DialogController.Progress(Int32 selectedIndex, Int32 dialogUid) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Controllers\DialogController.cs:line 255
+   at Tera.Services.PlayerService.ProgressDialog(Player player, Int32 selectedIndex, Int32 dialogUid) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\PlayerService.cs:line 158
+   at Communication.Logic.PlayerLogic.ProgressDialog(Player player, Int32 selectedIndex, Int32 dialogUid) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\PlayerLogic.cs:line 163
+   at Network.Client.RpDialogSelect.Process() in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\Client\RpDialogSelect.cs:line 18
+   at Network.ARecvPacket.Process(Connection connection) in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\ARecvPacket.cs:line 25
+13:13:38.2014 | ARecvPacket
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.Controllers.DialogController.Progress(Int32 selectedIndex, Int32 dialogUid) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Controllers\DialogController.cs:line 255
+   at Tera.Services.PlayerService.ProgressDialog(Player player, Int32 selectedIndex, Int32 dialogUid) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\PlayerService.cs:line 158
+   at Communication.Logic.PlayerLogic.ProgressDialog(Player player, Int32 selectedIndex, Int32 dialogUid) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\PlayerLogic.cs:line 163
+   at Network.Client.RpDialogSelect.Process() in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\Client\RpDialogSelect.cs:line 18
+   at Network.ARecvPacket.Process(Connection connection) in c:\Users\Julian\Documents\GitHub\TeraEmu\Network\ARecvPacket.cs:line 25

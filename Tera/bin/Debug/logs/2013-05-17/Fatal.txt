@@ -1,0 +1,243 @@
+01:33:39.4874 | Can't start server!
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.Services.MapService.CreateNpc(SpawnTemplate spawnTemplate) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 516
+   at Tera.Services.MapService.SpawnMap(MapInstance instance) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 205
+   at Tera.Services.MapService.Init() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 198
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 21
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+12:02:58.2279 | Can't start server!
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.Services.MapService.CreateNpc(SpawnTemplate spawnTemplate) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 516
+   at Tera.Services.MapService.SpawnMap(MapInstance instance) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 205
+   at Tera.Services.MapService.Init() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 198
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 21
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+12:04:11.3159 | Can't start server!
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.Services.MapService.CreateNpc(SpawnTemplate spawnTemplate) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 516
+   at Tera.Services.MapService.SpawnMap(MapInstance instance) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 205
+   at Tera.Services.MapService.Init() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 198
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 21
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+12:11:32.0955 | Can't start server!
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.Services.MapService.CreateNpc(SpawnTemplate spawnTemplate) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 516
+   at Tera.Services.MapService.SpawnMap(MapInstance instance) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 205
+   at Tera.Services.MapService.Init() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 198
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 21
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+12:33:00.8134 | Can't start server!
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.Services.MapService.CreateNpc(SpawnTemplate spawnTemplate) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 516
+   at Tera.Services.MapService.SpawnMap(MapInstance instance) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 205
+   at Tera.Services.MapService.Init() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 198
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 21
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+12:39:20.4271 | Can't start server!
+EXCEPTION OCCURRED
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Tera.Services.MapService.CreateNpc(SpawnTemplate spawnTemplate) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 516
+   at Tera.Services.MapService.SpawnMap(MapInstance instance) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 205
+   at Tera.Services.MapService.Init() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 198
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 21
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+15:28:22.8810 | Can't start server!
+EXCEPTION OCCURRED
+System.AggregateException: One or more errors occurred. ---> System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\data\spawn'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at Data.Data.LoadSpawns() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 346
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, Action`1 body)
+   at Data.Data.LoadAll() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 16
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+---> (Inner Exception #0) System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\data\spawn'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler, Boolean checkHost)
+   at System.IO.Directory.GetFiles(String path)
+   at Data.Data.LoadSpawns() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 346
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)<---
+
+15:28:39.8884 | Can't start server!
+EXCEPTION OCCURRED
+System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not find file 'C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\data\spawn\gather_spawns.bin'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Data.Data.LoadGatherSpawn() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 268
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, Action`1 body)
+   at Data.Data.LoadAll() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 16
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not find file 'C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\data\spawn\gather_spawns.bin'.
+File name: 'C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\data\spawn\gather_spawns.bin'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Data.Data.LoadGatherSpawn() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 268
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)<---
+
+16:24:05.2442 | Can't start server!
+EXCEPTION OCCURRED
+System.AggregateException: One or more errors occurred. ---> System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Data.Data.LoadMounts() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 197
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, Action`1 body)
+   at Data.Data.LoadAll() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 16
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+---> (Inner Exception #0) System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Data.Data.LoadMounts() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 197
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)<---
+
+16:24:38.0927 | Can't start server!
+EXCEPTION OCCURRED
+System.AggregateException: One or more errors occurred. ---> System.IO.FileNotFoundException: Could not find file 'C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\data\mounts.bin'.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Data.Data.LoadMounts() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 195
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, Action`1 body)
+   at Data.Data.LoadAll() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 16
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+---> (Inner Exception #0) System.IO.FileNotFoundException: Could not find file 'C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\data\mounts.bin'.
+File name: 'C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\data\mounts.bin'
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.IO.File.OpenRead(String path)
+   at Data.Data.LoadMounts() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 195
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)<---
+
+16:24:59.2054 | Can't start server!
+EXCEPTION OCCURRED
+System.AggregateException: One or more errors occurred. ---> System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Data.Data.LoadMounts() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 197
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, Action`1 body)
+   at Data.Data.LoadAll() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 16
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+---> (Inner Exception #0) System.ArgumentException: An item with the same key has already been added.
+   at System.ThrowHelper.ThrowArgumentException(ExceptionResource resource)
+   at System.Collections.Generic.Dictionary`2.Insert(TKey key, TValue value, Boolean add)
+   at System.Collections.Generic.Dictionary`2.Add(TKey key, TValue value)
+   at Data.Data.LoadMounts() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 197
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 126
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 120
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)<---
+

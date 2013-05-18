@@ -1,0 +1,5 @@
+C:\Users\Julian\Documents\GitHub\TeraEmu\ServerStatusUpdater\bin\Debug\ServerStatusUpdater.exe
+C:\Users\Julian\Documents\GitHub\TeraEmu\ServerStatusUpdater\bin\Debug\Communication.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\ServerStatusUpdater\bin\Debug\Informer.exe
+C:\Users\Julian\Documents\GitHub\TeraEmu\ServerStatusUpdater\bin\Debug\InformerLib.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\ServerStatusUpdater\bin\Debug\Scs.dll

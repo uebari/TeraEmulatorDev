@@ -1,0 +1,14 @@
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Tera.exe
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Communication.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Data.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\InformerLib.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Network.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Scs.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Utils.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\MySql.Data.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\protobuf-net.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Crypt.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\NLog.dll
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Communication.pdb
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Network.pdb
+C:\Users\Julian\Documents\GitHub\TeraEmu\Tera\bin\Debug\Tera.exe.config

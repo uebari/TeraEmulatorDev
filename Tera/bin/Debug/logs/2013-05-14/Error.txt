@@ -1,0 +1,61 @@
+00:26:10.2363 | MainLoop:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProtoBuf.ProtoWriter.WriteObject(Object value, Int32 key, ProtoWriter writer, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\ProtoWriter.cs:line 94
+   at ProtoBuf.Meta.TypeModel.SerializeWithLengthPrefix(Stream dest, Object value, Type type, PrefixStyle style, Int32 fieldNumber, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 469
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 334
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 318
+   at Data.Cache.SaveData() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Cache.cs:line 113
+   at Communication.Global.MainLoop() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Global.cs:line 114
+00:56:10.2361 | MainLoop:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProtoBuf.ProtoWriter.WriteObject(Object value, Int32 key, ProtoWriter writer, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\ProtoWriter.cs:line 94
+   at ProtoBuf.Meta.TypeModel.SerializeWithLengthPrefix(Stream dest, Object value, Type type, PrefixStyle style, Int32 fieldNumber, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 469
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 334
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 318
+   at Data.Cache.SaveData() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Cache.cs:line 113
+   at Communication.Global.MainLoop() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Global.cs:line 114
+01:26:10.2376 | MainLoop:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProtoBuf.ProtoWriter.WriteObject(Object value, Int32 key, ProtoWriter writer, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\ProtoWriter.cs:line 94
+   at ProtoBuf.Meta.TypeModel.SerializeWithLengthPrefix(Stream dest, Object value, Type type, PrefixStyle style, Int32 fieldNumber, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 469
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 334
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 318
+   at Data.Cache.SaveData() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Cache.cs:line 113
+   at Communication.Global.MainLoop() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Global.cs:line 114
+01:56:10.2428 | MainLoop:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProtoBuf.ProtoWriter.WriteObject(Object value, Int32 key, ProtoWriter writer, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\ProtoWriter.cs:line 94
+   at ProtoBuf.Meta.TypeModel.SerializeWithLengthPrefix(Stream dest, Object value, Type type, PrefixStyle style, Int32 fieldNumber, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 469
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 334
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 318
+   at Data.Cache.SaveData() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Cache.cs:line 113
+   at Communication.Global.MainLoop() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Global.cs:line 114
+02:26:10.2459 | MainLoop:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProtoBuf.ProtoWriter.WriteObject(Object value, Int32 key, ProtoWriter writer, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\ProtoWriter.cs:line 94
+   at ProtoBuf.Meta.TypeModel.SerializeWithLengthPrefix(Stream dest, Object value, Type type, PrefixStyle style, Int32 fieldNumber, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 469
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 334
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 318
+   at Data.Cache.SaveData() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Cache.cs:line 113
+   at Communication.Global.MainLoop() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Global.cs:line 114
+02:56:10.2513 | MainLoop:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at ProtoBuf.ProtoWriter.WriteObject(Object value, Int32 key, ProtoWriter writer, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\ProtoWriter.cs:line 94
+   at ProtoBuf.Meta.TypeModel.SerializeWithLengthPrefix(Stream dest, Object value, Type type, PrefixStyle style, Int32 fieldNumber, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 469
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 334
+   at ProtoBuf.Serializer.SerializeWithLengthPrefix[T](Stream destination, T instance, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 318
+   at Data.Cache.SaveData() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Cache.cs:line 113
+   at Communication.Global.MainLoop() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Global.cs:line 114
+03:20:27.2760 | DelayedAction Ex:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tera.Services.MapService.PlayerLeaveWorld(Player player) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 472
+   at Communication.Logic.PlayerLogic.PlayerEndGame(Player player) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\PlayerLogic.cs:line 49
+   at Communication.Logic.AccountLogic.<>c__DisplayClass1.<ClientDisconnected>b__0() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\AccountLogic.cs:line 35
+   at Utils.DelayedAction.Check() in c:\Users\Julian\Documents\GitHub\TeraEmu\Utils\DelayedAction.cs:line 54

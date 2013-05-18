@@ -1,0 +1,32 @@
+11:36:23.7695 | AdminEngine: Speed:
+EXCEPTION OCCURRED
+System.FormatException: Input string was not in a correct format.
+   at System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   at System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   at System.Int32.Parse(String s)
+   at Tera.AdminEngine.AdminCommands.GoTo.Process(IConnection connection, String msg) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\AdminEngine\AdminCommands\GoTo.cs:line 326
+11:40:05.2211 | DelayedAction Ex:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tera.Services.MapService.PlayerLeaveWorld(Player player) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 472
+   at Communication.Logic.PlayerLogic.PlayerEndGame(Player player) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\PlayerLogic.cs:line 49
+   at Communication.Logic.AccountLogic.<>c__DisplayClass1.<ClientDisconnected>b__0() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\AccountLogic.cs:line 35
+   at Utils.DelayedAction.Check() in c:\Users\Julian\Documents\GitHub\TeraEmu\Utils\DelayedAction.cs:line 54
+11:40:08.8156 | DelayedAction Ex:
+EXCEPTION OCCURRED
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at Tera.Services.MapService.PlayerLeaveWorld(Player player) in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\Services\MapService.cs:line 472
+   at Communication.Logic.PlayerLogic.PlayerEndGame(Player player) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\PlayerLogic.cs:line 49
+   at Communication.Logic.AccountLogic.<>c__DisplayClass1.<ClientDisconnected>b__0() in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\AccountLogic.cs:line 35
+   at Utils.DelayedAction.Check() in c:\Users\Julian\Documents\GitHub\TeraEmu\Utils\DelayedAction.cs:line 54
+12:17:42.8201 | DAO: Guild Save Failed!
+EXCEPTION OCCURRED
+MySql.Data.MySqlClient.MySqlException (0x80004005): Fatal error encountered during command execution. ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Parameter '?logo' must be defined.
+   at MySql.Data.MySqlClient.Statement.SerializeParameter(MySqlParameterCollection parameters, MySqlPacket packet, String parmName)
+   at MySql.Data.MySqlClient.Statement.InternalBindParameters(String sql, MySqlParameterCollection parameters, MySqlPacket packet)
+   at MySql.Data.MySqlClient.Statement.BindParameters()
+   at MySql.Data.MySqlClient.PreparableStatement.Execute()
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   at Data.DAO.GuildDAO.SaveGuild(List`1 players, String guildName) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\DAO\GuildDAO.cs:line 40

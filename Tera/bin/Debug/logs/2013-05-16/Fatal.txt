@@ -1,0 +1,86 @@
+22:35:07.7142 | Can't start server!
+EXCEPTION OCCURRED
+System.AggregateException: One or more errors occurred. ---> ProtoBuf.ProtoException: Invalid wire-type; this usually means you have over-written a file without truncating or setting the length; see http://stackoverflow.com/q/2152978/23354
+   at ProtoBuf.ProtoReader.ReadInt32() in C:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 279
+   at proto_2(Object , ProtoReader )
+   at ProtoBuf.Serializers.CompiledSerializer.ProtoBuf.Serializers.IProtoSerializer.Read(Object value, ProtoReader source) in C:\Dev\protobuf-net\protobuf-net\Serializers\CompiledSerializer.cs:line 49
+   at ProtoBuf.Meta.RuntimeTypeModel.Deserialize(Int32 key, Object value, ProtoReader source) in C:\Dev\protobuf-net\protobuf-net\Meta\RuntimeTypeModel.cs:line 418
+   at ProtoBuf.Meta.TypeModel.DeserializeWithLengthPrefix(Stream source, Object value, Type type, PrefixStyle style, Int32 expectedField, TypeResolver resolver, Int32& bytesRead, Boolean& haveObject, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 280
+   at ProtoBuf.Serializer.DeserializeWithLengthPrefix[T](Stream source, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 287
+   at ProtoBuf.Serializer.DeserializeWithLengthPrefix[T](Stream source, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 273
+   at Data.Data.LoadSpawns() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 317
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 125
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 119
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, Action`1 body)
+   at Data.Data.LoadAll() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 119
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 16
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+---> (Inner Exception #0) ProtoBuf.ProtoException: Invalid wire-type; this usually means you have over-written a file without truncating or setting the length; see http://stackoverflow.com/q/2152978/23354
+   at ProtoBuf.ProtoReader.ReadInt32() in C:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 279
+   at proto_2(Object , ProtoReader )
+   at ProtoBuf.Serializers.CompiledSerializer.ProtoBuf.Serializers.IProtoSerializer.Read(Object value, ProtoReader source) in C:\Dev\protobuf-net\protobuf-net\Serializers\CompiledSerializer.cs:line 49
+   at ProtoBuf.Meta.RuntimeTypeModel.Deserialize(Int32 key, Object value, ProtoReader source) in C:\Dev\protobuf-net\protobuf-net\Meta\RuntimeTypeModel.cs:line 418
+   at ProtoBuf.Meta.TypeModel.DeserializeWithLengthPrefix(Stream source, Object value, Type type, PrefixStyle style, Int32 expectedField, TypeResolver resolver, Int32& bytesRead, Boolean& haveObject, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 280
+   at ProtoBuf.Serializer.DeserializeWithLengthPrefix[T](Stream source, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 287
+   at ProtoBuf.Serializer.DeserializeWithLengthPrefix[T](Stream source, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 273
+   at Data.Data.LoadSpawns() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 317
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 125
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 119
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)<---
+
+22:39:47.3916 | Can't start server!
+EXCEPTION OCCURRED
+System.AggregateException: One or more errors occurred. ---> ProtoBuf.ProtoException: Invalid wire-type; this usually means you have over-written a file without truncating or setting the length; see http://stackoverflow.com/q/2152978/23354
+   at ProtoBuf.ProtoReader.ReadInt32() in C:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 279
+   at proto_2(Object , ProtoReader )
+   at ProtoBuf.Serializers.CompiledSerializer.ProtoBuf.Serializers.IProtoSerializer.Read(Object value, ProtoReader source) in C:\Dev\protobuf-net\protobuf-net\Serializers\CompiledSerializer.cs:line 49
+   at ProtoBuf.Meta.RuntimeTypeModel.Deserialize(Int32 key, Object value, ProtoReader source) in C:\Dev\protobuf-net\protobuf-net\Meta\RuntimeTypeModel.cs:line 418
+   at ProtoBuf.Meta.TypeModel.DeserializeWithLengthPrefix(Stream source, Object value, Type type, PrefixStyle style, Int32 expectedField, TypeResolver resolver, Int32& bytesRead, Boolean& haveObject, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 280
+   at ProtoBuf.Serializer.DeserializeWithLengthPrefix[T](Stream source, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 287
+   at ProtoBuf.Serializer.DeserializeWithLengthPrefix[T](Stream source, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 273
+   at Data.Data.LoadSpawns() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 317
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 125
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 119
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)
+   --- End of inner exception stack trace ---
+   at System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   at System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   at System.Threading.Tasks.Task.Wait()
+   at System.Threading.Tasks.Parallel.ForWorker[TLocal](Int32 fromInclusive, Int32 toExclusive, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Func`4 bodyWithLocal, Func`1 localInit, Action`1 localFinally)
+   at System.Threading.Tasks.Parallel.For(Int32 fromInclusive, Int32 toExclusive, Action`1 body)
+   at Data.Data.LoadAll() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 119
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 16
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
+---> (Inner Exception #0) ProtoBuf.ProtoException: Invalid wire-type; this usually means you have over-written a file without truncating or setting the length; see http://stackoverflow.com/q/2152978/23354
+   at ProtoBuf.ProtoReader.ReadInt32() in C:\Dev\protobuf-net\protobuf-net\ProtoReader.cs:line 279
+   at proto_2(Object , ProtoReader )
+   at ProtoBuf.Serializers.CompiledSerializer.ProtoBuf.Serializers.IProtoSerializer.Read(Object value, ProtoReader source) in C:\Dev\protobuf-net\protobuf-net\Serializers\CompiledSerializer.cs:line 49
+   at ProtoBuf.Meta.RuntimeTypeModel.Deserialize(Int32 key, Object value, ProtoReader source) in C:\Dev\protobuf-net\protobuf-net\Meta\RuntimeTypeModel.cs:line 418
+   at ProtoBuf.Meta.TypeModel.DeserializeWithLengthPrefix(Stream source, Object value, Type type, PrefixStyle style, Int32 expectedField, TypeResolver resolver, Int32& bytesRead, Boolean& haveObject, SerializationContext context) in C:\Dev\protobuf-net\protobuf-net\Meta\TypeModel.cs:line 280
+   at ProtoBuf.Serializer.DeserializeWithLengthPrefix[T](Stream source, PrefixStyle style, Int32 fieldNumber) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 287
+   at ProtoBuf.Serializer.DeserializeWithLengthPrefix[T](Stream source, PrefixStyle style) in C:\Dev\protobuf-net\protobuf-net\Serializer.cs:line 273
+   at Data.Data.LoadSpawns() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 317
+   at Data.Data.LoadTask(Loader loader) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 125
+   at Data.Data.<LoadAll>b__0(Int32 i) in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Data.cs:line 119
+   at System.Threading.Tasks.Parallel.<>c__DisplayClassf`1.<ForWorker>b__c()
+   at System.Threading.Tasks.Task.InnerInvoke()
+   at System.Threading.Tasks.Task.InnerInvokeWithArg(Task childTask)
+   at System.Threading.Tasks.Task.<>c__DisplayClass10.<ExecuteSelfReplicating>b__f(Object param0)<---
+

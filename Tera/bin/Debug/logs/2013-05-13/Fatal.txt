@@ -1,0 +1,12 @@
+21:26:00.4584 | Can't start server!
+EXCEPTION OCCURRED
+MySql.Data.MySqlClient.MySqlException (0x80004005): Invalid attempt to access a field before calling Read()
+   at MySql.Data.MySqlClient.ResultSet.get_Item(Int32 index)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetFieldValue(Int32 index, Boolean checkNull)
+   at MySql.Data.MySqlClient.MySqlDataReader.GetInt32(Int32 i)
+   at Data.DAO.AccountDAO.LoadAccountCount() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\DAO\AccountDAO.cs:line 31
+   at Data.Cache.LoadAccounts() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Cache.cs:line 56
+   at Data.Cache.LoadData() in c:\Users\Julian\Documents\GitHub\TeraEmu\Data\Cache.cs:line 25
+   at Communication.Logic.GlobalLogic.ServerStart(String str) in c:\Users\Julian\Documents\GitHub\TeraEmu\Communication\Logic\GlobalLogic.cs:line 17
+   at Tera.GameServer.RunServer() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 105
+   at Tera.GameServer.Main() in c:\Users\Julian\Documents\GitHub\TeraEmu\Tera\GameServer.cs:line 29
