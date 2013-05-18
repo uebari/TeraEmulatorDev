@@ -22,6 +22,8 @@ using Tera.Extensions;
 using Tera.Structures;
 using Utils;
 using Data.DAO;
+using Data.Structures.Account;
+using Data.Enums.Item;
 
 namespace Tera.Services
 {
@@ -59,6 +61,20 @@ namespace Tera.Services
             PlayersOnline.Add(player);
         }
 
+        public List<Player> OnAuthorized(Account account)
+        {
+            var list = DAOManager.playerDAO.LoadAccountPlayers(account.Name);
+            foreach (var player in list)
+            {
+                player.Inventory = DAOManager.inventoryDAO.LoadStorage(player, StorageType.Inventory);
+                player.CharacterWarehouse = DAOManager.inventoryDAO.LoadStorage(player, StorageType.CharacterWarehouse);
+                player.Quests = DAOManager.questDAO.LoadQuests(player);
+                player.Skills = DAOManager.skillDAO.LoadSkills(player);
+                //player.Guild = DAOManager.guildDAO.LoadPlayerGuild(player);
+            }
+            return list;
+        }
+
         public void PlayerEnterWorld(Player player)
         {
         }
@@ -77,10 +93,8 @@ namespace Tera.Services
 
             DAOManager.inventoryDAO.SaveStorage(player, player.Inventory);
             DAOManager.playerDAO.UpdatePlayer(player);
-            foreach (var quest in player.Quests.ToList())
-            {
-                DAOManager.questDAO.AddQuest(player, quest.Value);
-            }
+            DAOManager.questDAO.AddQuests(player);
+            DAOManager.skillDAO.SaveSkills(player);
         }
 
         public CheckNameResult CheckName(string name, short type)

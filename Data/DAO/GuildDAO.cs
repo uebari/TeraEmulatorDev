@@ -21,7 +21,7 @@ namespace Data.DAO
         {
             GuildDAOConnection = new MySqlConnection(conStr);
             GuildDAOConnection.Open();
-            Log.Info("DAO: Guild Manager Started!");
+            Log.Info("DAO: GuildDAO Initialized!");
         }
 
         public bool SaveGuild(List<Player> players, string guildName)

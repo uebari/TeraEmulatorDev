@@ -59,6 +59,7 @@
     <Compile Include="DAO\InventoryDAO.cs" />
     <Compile Include="DAO\PlayerDAO.cs" />
     <Compile Include="DAO\QuestDAO.cs" />
+    <Compile Include="DAO\SkillsDAO.cs" />
     <Compile Include="Data.cs" />
     <Compile Include="Enums\AttackStatus.cs" />
     <Compile Include="Enums\AttackType.cs" />

@@ -18,7 +18,7 @@ namespace Data.DAO
         {
             AccountDAOConnection = new MySqlConnection(conStr);
             AccountDAOConnection.Open();
-            Log.Info("DAO: Account DAO Started!");
+            Log.Info("DAO: AccountDAO Initialized!");
         }
 
         public int LoadAccountCount()

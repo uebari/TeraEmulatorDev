@@ -20,7 +20,7 @@ namespace Data.DAO
         {
             QuestDAOConnection = new MySqlConnection(conStr);
             QuestDAOConnection.Open();
-            Log.Info("DAO: QUEST DAO STARTED!");
+            Log.Info("DAO: QuestDAO Initialized!");
         }
 
         public void AddQuest(Player player, QuestData questdata)
@@ -69,6 +69,14 @@ namespace Data.DAO
             }
 
             AddQuestReader.Close();
+        }
+
+        public void AddQuests(Player player)
+        {
+            foreach (var quest in player.Quests.ToList())
+            {
+                AddQuest(player, quest.Value);
+            }
         }
 
         public QuestData LoadQuest(Player player, int questid)

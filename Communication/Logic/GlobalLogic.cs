@@ -9,10 +9,8 @@ namespace Communication.Logic
 {
     public class GlobalLogic : Global
     {
-        public static void ServerStart(string str)
+        public static void ServerStart()
         {
-            DAOManager.Initialize(str);
-
             Data.Data.LoadAll();
             Data.Cache.LoadData();
 

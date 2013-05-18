@@ -469,16 +469,19 @@ namespace Tera.Services
 
         public void PlayerLeaveWorld(Player player)
         {
-            if (player.Instance.Players.Count <= 1 && IsDungeon(player.Instance.MapId))
-                DestructInstance(player.Instance);
-            else
-                DespawnTeraObject(player);
+            if (player.Instance != null)
+            {
+                if (player.Instance.Players.Count <= 1 && IsDungeon(player.Instance.MapId))
+                    DestructInstance(player.Instance);
+                else
+                    DespawnTeraObject(player);
 
-            player.Instance = null;
+                player.Instance = null;
 
-            player.Visible.Stop();
-            player.Visible.Release();
-            player.Visible = null;
+                player.Visible.Stop();
+                player.Visible.Release();
+                player.Visible = null;
+            }
         }
 
         public static bool TryPutCampfire(Player player, WorldPosition position)

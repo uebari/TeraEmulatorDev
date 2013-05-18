@@ -1,10 +1,11 @@
-﻿using System.Collections.Generic;
-using Data.Enums;
+﻿using Data.Enums;
 using Data.Enums.Player;
 using Data.Interfaces;
 using Data.Structures;
+using Data.Structures.Account;
 using Data.Structures.Npc;
 using Data.Structures.Player;
+using System.Collections.Generic;
 
 namespace Communication.Interfaces
 {
@@ -13,6 +14,7 @@ namespace Communication.Interfaces
         List<Player> GetOnline();
         void Send(ISendPacket packet);
         void InitPlayer(Player player, bool isProlog);
+        List<Player> OnAuthorized(Account account);
         void PlayerEnterWorld(Player player);
         void PlayerEndGame(Player player);
         CheckNameResult CheckName(string name, short type);

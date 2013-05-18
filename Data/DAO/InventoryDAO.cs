@@ -20,7 +20,7 @@ namespace Data.DAO
         {
             InventoryDAOConnection = new MySqlConnection(conStr);
             InventoryDAOConnection.Open();
-            Log.Info("DAO: Inventory DAO Started!");
+            Log.Info("DAO: InventoryDAO Initialized!");
         }
 
         public bool AddItem(Player player, StorageType type, KeyValuePair<int, StorageItem> KeyVP)

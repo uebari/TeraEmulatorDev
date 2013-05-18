@@ -22,6 +22,7 @@ namespace Tera
 
         public static void Main()
         {
+            Console.Title = "Tera Emulator";
             Console.CancelKeyPress += CancelEventHandler;
 
             try
@@ -49,14 +50,7 @@ namespace Tera
 
             AppDomain.CurrentDomain.UnhandledException += UnhandledException;
 
-            Console.WriteLine("----===== Cerium Unity GameServer =====----\n\n"
-                              + "Copyright (C) 2011 Cerium Unity\n\n"
-                              + "This program is CLOSE SOURCE project.\n"
-                              + "You DON'T have any right's, if you are NOT autor\n"
-                              + "or authorized representative of him.\n"
-                              + "Using that program without any right's is ILLEGAL\n\n"
-                              + "Authors: Alehandr, MetaWind\n"
-                              + "Authorized representative: on-tera.com\n\n"
+            Console.WriteLine("Loading Data Access Object.\n"
                               + "-------------------------------------------");
 
             TcpServer = new TcpServer("*", 11101, 1000);
@@ -102,14 +96,19 @@ namespace Tera
 
             #endregion
 
-            GlobalLogic.ServerStart(GamePlay.Default.dbconnstring);
+            DAOManager.Initialize(GamePlay.Default.dbconnstring);
+
+            Console.WriteLine("Loading Data Files.\n-------------------------------------------");
+            GlobalLogic.ServerStart();
+
+            Console.WriteLine("\nLoading Tcp Service.\n-------------------------------------------");
 
             TcpServer.BeginListening();
 
             try
             {
                 ServiceApplication = ScsServiceBuilder.CreateService(new ScsTcpEndPoint(23232));
-                ServiceApplication.AddService<IInformerService, InformerService>((InformerService) InformerService);
+                ServiceApplication.AddService<IInformerService, InformerService>((InformerService)InformerService);
                 ServiceApplication.Start();
                 Log.Info("InformerService started at *:23232.");
             }
@@ -120,7 +119,7 @@ namespace Tera
 
             sw.Stop();
             Console.WriteLine("-------------------------------------------");
-            Console.WriteLine("           Server start in {0}", (sw.ElapsedMilliseconds/1000.0).ToString("0.00s"));
+            Console.WriteLine("           Server start in {0}", (sw.ElapsedMilliseconds / 1000.0).ToString("0.00s"));
             Console.WriteLine("-------------------------------------------");
         }
 
